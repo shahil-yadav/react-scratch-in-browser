@@ -3,11 +3,10 @@ const LoadJsxButton = () => {
 
   if (isClicked)
     return (
-      <div>
-        <p>Loads Babel plugin ~ 2.9mb</p>
-        <p>Loads react + react-dom ~ 143kb</p>
-        <p>Total : 3.043 kb</p>
-      </div>
+      <ul className="list-disc">
+        <li>Loads Babel plugin ~ 2.9mb</li>
+        <li>However this jsx is eventually gonna be compiled into React.createElement syntax by Babel only</li>
+      </ul>
     );
 
   return (

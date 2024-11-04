@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Just a Dev</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .btn {
+        @apply py-2 px-4 text-sm rounded;
+      }
+      .btn-blue {
+        @apply bg-slate-500 text-white;
+      }
+      .btn-blue:hover {
+        @apply bg-slate-700;
+      }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="h-screen flex justify-around items-center">
+      <div class="space-y-3">
+        <h2 class="text-lg">No JSX support</h2>
+        <!-- We will put our React component inside this div. -->
+        <div id="no-jsx"></div>
+      </div>
+      <div class="space-y-3">
+        <h2 class="text-lg">JSX support by Babel</h2>
+        <div class="" id="jsx"></div>
+      </div>
+    </div>
+
+    <script src="lib/react-18.js"></script>
+    <script src="lib/react-dom-18.js"></script>
+    <script src="lib/babel.js"></script>
+
+    <script src="no-jsx.js"></script>
+    <script type="text/babel" src="with-jsx.js"></script>
+  </body>
+</html>
